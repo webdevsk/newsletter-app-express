@@ -20,15 +20,15 @@ mailchimp.setConfig({
   server: "us7",
 })
 
-const mailchimpPingTest = async () => {
-  const response = await mailchimp.lists.getAllLists();
-  console.log(response);
-}
+// const mailchimpPingTest = async () => {
+//   const response = await mailchimp.lists.getAllLists();
+//   console.log(response);
+// }
 
 
 //On App launch
 app.get('/', (req, res) => {
-    mailchimpPingTest();
+    // mailchimpPingTest();
     res.sendFile(__dirname + '/public/signup.html')
 })
 
