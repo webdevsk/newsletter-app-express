@@ -1,10 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const https = require('node:https')
 const mailchimp = require("@mailchimp/mailchimp_marketing")
 
 //init app and port
-const port = 3000
+const port = process.env.PORT || 3000
 const app = express()
 
 
